@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class aplication {
+public class application {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -20,13 +20,16 @@ public class aplication {
 		
 		System.out.print("Digite seu gênero (F/M): " );
 		String gender = sc.nextLine();
-	
-//		System.out.println("Menu de opções:");
-//		System.out.println("1 - Criar Pedidos \n 2- Editar Dados \n 3- Voltar");
-//		
-//		System.out.println("Escolha uma opção:");
-		
-		
+
+		do {
+			System.out.print("1 - Criar pedido");
+			System.out.print("2 - Editar dados");
+			System.out.print("3 - Sair");
+			
+			System.out.print("Escolha uma opção: ");
+			String option = sc.nextLine();
+		}
+		while(! saia;) 
 		
 		
 		sc.close();
