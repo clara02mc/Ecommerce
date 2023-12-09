@@ -15,11 +15,12 @@ public class application {
 		String address = sc.nextLine();
 		 
 		System.out.print("Digite sua idade: ");
-		String age =  sc.nextLine();
+		int age =  sc.nextInt();
 		
 		
 		System.out.print("Digite seu gênero (F/M): " );
 		String gender = sc.nextLine();
+		
 
 		   boolean saia = false;
 
@@ -29,17 +30,17 @@ public class application {
 	            System.out.println("3 - Sair");
 
 	            System.out.print("Escolha uma opção: ");
-	            String option = sc.nextLine();
+	            int option = sc.nextInt();
 
 	            switch (option) {
-	                case "1":     
+	                case 1:     
 	                    System.out.println("Você escolheu criar um pedido :) ");
 	                    
 	                    break;
-	                case "2":
+	                case 2:
 	                    System.out.println("Você escolheu editar dados ");
 	                    break;
-	                case "3":
+	                case 3:
 	                    saia = true;
 	                    System.out.println("S");
 	                    break;
