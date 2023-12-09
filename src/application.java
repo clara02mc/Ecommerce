@@ -21,15 +21,34 @@ public class application {
 		System.out.print("Digite seu gênero (F/M): " );
 		String gender = sc.nextLine();
 
-		do {
-			System.out.print("1 - Criar pedido");
-			System.out.print("2 - Editar dados");
-			System.out.print("3 - Sair");
-			
-			System.out.print("Escolha uma opção: ");
-			String option = sc.nextLine();
-		}
-		while(! saia;) 
+		   boolean saia = false;
+
+	        do {
+	            System.out.println("1 - Criar pedido");
+	            System.out.println("2 - Editar dados");
+	            System.out.println("3 - Sair");
+
+	            System.out.print("Escolha uma opção: ");
+	            String option = sc.nextLine();
+
+	            switch (option) {
+	                case "1":     
+	                    System.out.println("Você escolheu criar um pedido :) ");
+	                    
+	                    break;
+	                case "2":
+	                    System.out.println("Você escolheu editar dados ");
+	                    break;
+	                case "3":
+	                    saia = true;
+	                    System.out.println("S");
+	                    break;
+	                default:
+	                    System.out.println("Opção inválida. Tente novamente.");
+	            }
+	        } while (!saia);
+		   
+
 		
 		
 		sc.close();
